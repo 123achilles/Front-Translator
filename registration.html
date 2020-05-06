@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Translate.io</title>
+</head>
+<body>
+<!--start header-->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand logo" href="#"><img src="img/logo1.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Find Job<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Find Translator<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">How It Works<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help<span class="sr-only">(current)</span></a>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn  my-2 my-sm-0 login">Log In</button>
+            <button class="btn my-2 my-sm-0 sign">Sign UP</button>
+          </form>
+        </div>
+      </nav>
+</header>
+<!--end header-->
+
+<!--start SignUp-->
+<section class="sign-up">
+    <ul class="nav d-flex justify-content-center native-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="translator-info-tab" data-toggle="tab"
+               href="#translator-info" role="tab" aria-controls="translator-info"
+               aria-selected="true">Basic information</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="confirm-info-tab" data-toggle="tab" href="#confirm-info" role="tab"
+               aria-controls="confirm-info" aria-selected="false">Confirmation</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="complete-tab" data-toggle="tab" href="#complete" role="tab"
+               aria-controls="complete" aria-selected="false">Completing</a>
+        </li>
+    </ul>
+    <div class="container">
+        <div class="row no-gutters basic-form d-flex justify-content-center">
+            <div class="col-md-6 col-sm-12">
+                <div class="row no-gutters">
+                    <div class="col-12">
+                        <h5 class="title">Join to Talk Native</h5>
+                    </div>
+                    <div class="col-12">
+                        <p class="rede some-text">
+                            To register please fill in the fields below. Please note that all fields are required to create an
+                            account. On the next step, you will need to confirm your email.
+                        </p>
+                    </div>
+                    <div class="col-12 form-box">
+                        <form>
+                            <div class="form-group">
+                                <div class="custom-radios">
+                                    <input type="radio" id="translator" name="position" checked
+                                           value="I'm a translator">
+                                    <label for="translator">I'm a translator</label>
+
+                                    <input type="radio" id="customer" name="position" value="I'm a customer">
+                                    <label for="customer">I'm a customer</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="f_name">First name</label>
+                                <input type="text" class="form-control" id="f_name">
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="l_name">Last name</label>
+                                <input type="text" class="form-control" id="l_name">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Office address or place of work:</label>
+                                <input type="text" class="form-control" id="address"
+                                       aria-describedby="inputGroupPrepend3">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" id="email"
+                                       placeholder="example@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="pass">Password:</label>
+                                <input type="password" class="form-control" id="pass">
+                            </div>
+                            <div class="form-group">
+                                <label for="conf_pass">Confirm password:</label>
+                                <input type="password" class="form-control" id="conf_pass">
+                                <div class="error">Your password must be at least 6 characters long and must contain
+                                    letters, numbers and special characters. Cannot contain whitespace.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input is-invalid" type="checkbox" value=""
+                                           id="check">
+                                    <label class="form-check-label" for="check">
+                                        I agree ot all the statements included in the <a href="#">Terms of Use</a> and
+                                        <br><a href="#">Privacy Policy</a>
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-continue" type="submit">Continue</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!--end translator block-->
+    </div>
+</section>
+<!--end SignUp-->
+
+
+<!--start footer-->
+
+<footer>
+    <div class="footer_1_block">
+        <img class="footerLogo"src="./img/logo.png"/>
+        <p> Global community of leading translators and interpreters with specialised industry expertise</p>
+        <div class="copyright"> 2020 © translate.io  ·  Terms of Use  ·  Privacy Policy</div>
+    </div>
+    <div class="footer_2_block to-right">
+        <a href="">Find Job</a>
+        <a href="">Find Translator</a>
+        <a href="">Specializations</a>
+    </div>
+    <div class="footer_2_block">
+        <a href="">About Us</a>
+        <a href="">How It Works</a>
+        <a href="">Key Features</a>
+    </div>
+    <div class="footer_2_block">
+        <a href="">Contact</a>
+        <a href="">Help</a>
+        <a href="">Blog</a>
+    </div>
+    <div class="footer_5_block">
+      <div class="footerLiAndSoc">
+        <li class="email_text">hello@translate.io</li>
+        <div class="soc">
+            <a href="" target="_blank"><img src="./img/fb.png"/></a>
+            <a href="" target="_blank"><img src="./img/ln.png"/></a>
+            <a href="" target="_blank"><img src="./img/insta.png"/></a>
+        </div>
+    </div>
+    </div>
+</footer>
+
+<!--end footer-->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src="js/script.js"></script>
+</html>
